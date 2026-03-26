@@ -1,8 +1,7 @@
 {
-  "buildCommand": "git clone https://github.com/flutter/flutter.git --depth 1 -b stable && export PATH=\"$PATH:`pwd`/flutter/bin\" && flutter config --enable-web && flutter pub get && flutter build web",
+  "buildCommand": "git clone https://github.com/flutter/flutter.git --depth 1 -b 3.22.3 && export PATH=\"$PATH:`pwd`/flutter/bin\" && flutter config --enable-web && flutter pub get && flutter build web --release --base-href /",
   "outputDirectory": "build/web",
-  "routes": [
-    { "handle": "filesystem" },
-    { "src": "/.*", "dest": "/index.html" }
+  "rewrites": [
+    { "source": "/((?!assets|icons|favicon|flutter).*)", "destination": "/index.html" }
   ]
 }
