@@ -246,7 +246,7 @@ class Restaurant extends ChangeNotifier{
     Food(
       "Mango Smoothie", 
       "Blended ripe mangoes, creamy, thick, and tropical",
-      "images/drinks/iced_tea.png", 
+      "images/drinks/mango_smoothie.png", 
       34.00, 
       FoodCategory.drinks, 
       [
