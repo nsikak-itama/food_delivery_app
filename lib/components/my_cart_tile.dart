@@ -32,7 +32,7 @@ class MyCartTile extends StatelessWidget {
                       child: Image.asset(
                         cartItem.food.imagePath, 
                         height: 120, 
-                        width: 190,
+                        width: 150,
                       ),
                     ),
                     SizedBox(width: 10),
