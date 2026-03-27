@@ -83,7 +83,7 @@ class Restaurant extends ChangeNotifier{
       [
         Addon(name: "berries", Price: 0.99),
         Addon(name: "syrup", Price: 1.99),
-        Addon(name: "hoeny", Price: 2.99)
+        Addon(name: "honey", Price: 2.99)
       ]
     ),
 
@@ -96,7 +96,7 @@ class Restaurant extends ChangeNotifier{
       [
         Addon(name: "berries", Price: 0.99),
         Addon(name: "syrup", Price: 1.99),
-        Addon(name: "hoeny", Price: 2.99)
+        Addon(name: "honey", Price: 2.99)
       ]
     ),
 
@@ -109,7 +109,7 @@ class Restaurant extends ChangeNotifier{
       [
         Addon(name: "berries", Price: 0.99),
         Addon(name: "syrup", Price: 1.99),
-        Addon(name: "hoeny", Price: 2.99)
+        Addon(name: "honey", Price: 2.99)
       ]
     ),
 
@@ -122,7 +122,7 @@ class Restaurant extends ChangeNotifier{
       [
         Addon(name: "berries", Price: 0.99),
         Addon(name: "syrup", Price: 1.99),
-        Addon(name: "hoeny", Price: 2.99)
+        Addon(name: "honey", Price: 2.99)
       ]
     ),
 
@@ -135,7 +135,7 @@ class Restaurant extends ChangeNotifier{
       [
         Addon(name: "berries", Price: 0.99),
         Addon(name: "syrup", Price: 1.99),
-        Addon(name: "hoeny", Price: 2.99)
+        Addon(name: "honey", Price: 2.99)
       ]
     ),
 
