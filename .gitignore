@@ -33,8 +33,12 @@ migrate_working_dir/
 .flutter-plugins-dependencies
 .pub-cache/
 .pub/
-/build/
+# Ignore most build output
+/build/*
 
+# But allow Flutter web build for Vercel
+!build/web/
+!build/web/**
 # Symbolication related
 app.*.symbols
 
