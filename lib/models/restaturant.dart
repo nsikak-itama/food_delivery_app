@@ -10,7 +10,7 @@ class Restaurant extends ChangeNotifier{
     Food(
       "Cheese Burger", 
       "A juicy beef patty with melted cheddar, lettuce, tomoato, and a hint of onion and pickle", 
-      "images/burgers/cheese_burger.png", 
+      "assets/images/burgers/cheese_burger.png", 
       60.00, 
       FoodCategory.burgers, 
       [
@@ -23,7 +23,7 @@ class Restaurant extends ChangeNotifier{
     Food(
       "Aloha Burger", 
       "A juicy beef patty topped with grilled pineapple, crispy bacon, fresh lettuce, and teriyaki glaze for a sweet and savory island-inspired bite", 
-      "images/burgers/aloha_burer.png", 
+      "assets/images/burgers/aloha_burer.png", 
       40.50, 
       FoodCategory.burgers, 
       [
@@ -36,7 +36,7 @@ class Restaurant extends ChangeNotifier{
     Food(
       "bbq Burger", 
       "Flame-grilled beef layered with smoky barbecue sauce, crispy onion rings, cheddar cheese, and fresh lettuce for bold, backyard flavor.",
-      "images/burgers/bbq_burger.png", 
+      "assets/images/burgers/bbq_burger.png", 
       30.50, 
       FoodCategory.burgers, 
       [
@@ -49,7 +49,7 @@ class Restaurant extends ChangeNotifier{
     Food(
       "Veggie burger", 
       "A hearty plant-based patty topped with fresh lettuce, tomato, red onion, and creamy sauce for a satisfying meat-free option",
-      "images/burgers/vege.png", 
+      "assets/images/burgers/vege.png", 
       30.50, 
       FoodCategory.burgers, 
       [
@@ -62,7 +62,7 @@ class Restaurant extends ChangeNotifier{
     Food(
       "Bluemoon burger", 
       "A rich beef patty topped with melted blue cheese, caramelized onions, and fresh greens for a creamy, savory kick",
-      "images/burgers/bluemoon_burger.png", 
+      "assets/images/burgers/bluemoon_burger.png", 
       51.25, 
       FoodCategory.burgers, 
       [
@@ -77,7 +77,7 @@ class Restaurant extends ChangeNotifier{
     Food(
       "Apple pie", 
       "Warm spiced apples baked in flaky golden crust",
-      "images/desserts/applepie.png", 
+      "assets/images/desserts/applepie.png", 
       51.25, 
       FoodCategory.desserts, 
       [
@@ -90,7 +90,7 @@ class Restaurant extends ChangeNotifier{
     Food(
       "Chocolate Lava Cake", 
       "Rich chocolate cake with warm, gooey center.",
-      "images/desserts/chocolate_cake.png", 
+      "assets/images/desserts/chocolate_cake.png", 
       40.00, 
       FoodCategory.desserts, 
       [
@@ -103,7 +103,7 @@ class Restaurant extends ChangeNotifier{
     Food(
       "Cheesecake", 
       "Creamy baked cheesecake with smooth, velvety texture.",
-      "images/desserts/cheesecake.png", 
+      "assets/images/desserts/cheesecake.png", 
       50.00, 
       FoodCategory.desserts, 
       [
@@ -116,7 +116,7 @@ class Restaurant extends ChangeNotifier{
     Food(
       "Brownies", 
       "Fudgy chocolate squares, rich and perfectly baked.",
-      "images/desserts/brownies.png", 
+      "assets/images/desserts/brownies.png", 
       30.00, 
       FoodCategory.desserts, 
       [
@@ -129,7 +129,7 @@ class Restaurant extends ChangeNotifier{
     Food(
       "Vanilla Ice Cream", 
       "Creamy vanilla ice cream, smooth and sweet",
-      "images/desserts/vanilla_ice_cream.png", 
+      "assets/images/desserts/vanilla_ice_cream.png", 
       30.00, 
       FoodCategory.desserts, 
       [
@@ -144,7 +144,7 @@ class Restaurant extends ChangeNotifier{
     Food(
       "Caesar Salad", 
       "Romaine lettuce, grilled chicken, croutons, parmesan, Caesar dressing",
-      "images/salad/caesar_salad.png", 
+      "assets/images/salad/caesar_salad.png", 
       30.00, 
       FoodCategory.salads, 
       [
@@ -157,7 +157,7 @@ class Restaurant extends ChangeNotifier{
     Food(
       "Greek Salad", 
       "Tomatoes, cucumber, red onion, olives, feta cheese, olive oil dressing.",
-      "images/salad/greek_salad.png", 
+      "assets/images/salad/greek_salad.png", 
       36.00, 
       FoodCategory.salads, 
       [
@@ -170,7 +170,7 @@ class Restaurant extends ChangeNotifier{
     Food(
       "Cobb Salad", 
       "Grilled chicken, avocado, bacon, egg, tomatoes, blue cheese",
-      "images/salad/cobbsalad.png", 
+      "assets/images/salad/cobbsalad.png", 
       46.00, 
       FoodCategory.salads, 
       [
@@ -183,7 +183,7 @@ class Restaurant extends ChangeNotifier{
     Food(
       "Garden Salad", 
       "Mixed greens, carrots, cucumber, tomatoes, vinaigrette.",
-      "images/salad/garden_salad.png", 
+      "assets/images/salad/garden_salad.png", 
       26.00, 
       FoodCategory.salads, 
       [
@@ -196,7 +196,7 @@ class Restaurant extends ChangeNotifier{
     Food(
       "Pasta Salad", 
       "Rotini pasta, cherry tomatoes, olives, bell peppers, Italian dressing.",
-      "images/salad/pasta_salad.png", 
+      "assets/images/salad/pasta_salad.png", 
       34.00, 
       FoodCategory.salads, 
       [
@@ -211,7 +211,7 @@ class Restaurant extends ChangeNotifier{
     Food(
       "Fresh Orange Juice", 
       "Freshly squeezed oranges, naturally sweet and refreshing",
-      "images/drinks/orange juice.png", 
+      "assets/images/drinks/orange juice.png", 
       41.00, 
       FoodCategory.drinks, 
       [
@@ -223,7 +223,7 @@ class Restaurant extends ChangeNotifier{
     Food(
       "Lemonade", 
       "Cool, tangy lemon drink with a touch of sweetness",
-      "images/drinks/lemonade.png", 
+      "assets/images/drinks/lemonade.png", 
       37.00, 
       FoodCategory.drinks, 
       [
@@ -235,7 +235,7 @@ class Restaurant extends ChangeNotifier{
     Food(
       "Iced Tea", 
       "Chilled brewed tea, lightly sweetened and refreshing",
-      "images/drinks/iced_tea.png", 
+      "assets/images/drinks/iced_tea.png", 
       33.00, 
       FoodCategory.drinks, 
       [
@@ -246,7 +246,7 @@ class Restaurant extends ChangeNotifier{
     Food(
       "Mango Smoothie", 
       "Blended ripe mangoes, creamy, thick, and tropical",
-      "images/drinks/mango_smoothie.png", 
+      "assets/images/drinks/mango_smoothie.png", 
       34.00, 
       FoodCategory.drinks, 
       [
@@ -259,7 +259,7 @@ class Restaurant extends ChangeNotifier{
     Food(
       "French Fries", 
       "Golden crispy fries, lightly salted and crunchy",
-      "images/sides/french_fries.png", 
+      "assets/images/sides/french_fries.png", 
       24.60, 
       FoodCategory.sides, 
       [
@@ -271,7 +271,7 @@ class Restaurant extends ChangeNotifier{
     Food(
       "Onion Rings", 
       "Crispy battered onions, golden and flavorful",
-      "images/sides/onion_rings.png", 
+      "assets/images/sides/onion_rings.png", 
       34.60, 
       FoodCategory.sides, 
       [
@@ -283,7 +283,7 @@ class Restaurant extends ChangeNotifier{
     Food(
       "Garlic Bread", 
       "Toasted bread with garlic butter and herbs",
-      "images/sides/garlic_bread.png", 
+      "assets/images/sides/garlic_bread.png", 
       40.00, 
       FoodCategory.sides, 
       [
@@ -295,7 +295,7 @@ class Restaurant extends ChangeNotifier{
     Food(
       "Coleslaw", 
       "Fresh shredded cabbage with creamy dressing.",
-      "images/sides/coleslaw.png", 
+      "assets/images/sides/coleslaw.png", 
       40.00, 
       FoodCategory.sides, 
       [
