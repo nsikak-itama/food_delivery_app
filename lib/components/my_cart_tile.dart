@@ -25,33 +25,37 @@ class MyCartTile extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Row(
-                  children: [
-                    ClipRRect(
-                      borderRadius: BorderRadiusGeometry.circular(8),
-                      child: Image.asset(
-                        cartItem.food.imagePath, 
-                        height: 120, 
-                        width: 150,
+                Expanded(
+                  child: Row(
+                    children: [
+                      ClipRRect(
+                        borderRadius: BorderRadiusGeometry.circular(8),
+                        child: Image.asset(
+                          cartItem.food.imagePath, 
+                          height: 120, 
+                          width: 100,
+                        ),
                       ),
-                    ),
-                    SizedBox(width: 10),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(cartItem.food.name),
-                        SizedBox(height: 5),
-                        Text('\$' + cartItem.food.price.toString()),
-                        SizedBox(height: 5),
-                        QunatitySelector(
-                          quantity: cartItem.quantity, 
-                          food: cartItem.food, 
-                          onIncrement: () => restaurant.addToCart(cartItem.food, cartItem.selectedAddons), 
-                          onDecrement: () => restaurant.removeFromCart(cartItem)
-                        )
-                      ],
-                    )
-                  ],
+                      SizedBox(width: 10),
+                      Flexible(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(cartItem.food.name,overflow: TextOverflow.ellipsis),
+                            SizedBox(height: 5),
+                            Text('\$' + cartItem.food.price.toString()),
+                            SizedBox(height: 5),
+                            QunatitySelector(
+                              quantity: cartItem.quantity, 
+                              food: cartItem.food, 
+                              onIncrement: () => restaurant.addToCart(cartItem.food, cartItem.selectedAddons), 
+                              onDecrement: () => restaurant.removeFromCart(cartItem)
+                            )
+                          ],
+                        ),
+                      )
+                    ],
+                  ),
                 ),
                 IconButton(onPressed: onPressed, icon: Icon(Icons.delete))
               ],

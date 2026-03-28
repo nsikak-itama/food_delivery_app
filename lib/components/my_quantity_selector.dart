@@ -18,6 +18,7 @@ class QunatitySelector extends StatelessWidget {
         borderRadius: BorderRadius.circular(50)
       ),
       child: Row(
+        mainAxisSize: MainAxisSize.min,
         children: [
           IconButton(onPressed: onIncrement, icon: Icon(Icons.add, size: 20,)),
           Padding(
