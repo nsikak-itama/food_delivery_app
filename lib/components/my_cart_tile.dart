@@ -19,7 +19,7 @@ class MyCartTile extends StatelessWidget {
           color: Theme.of(context).colorScheme.secondary
         ),
         margin: EdgeInsets.symmetric(horizontal: 25, vertical: 5),
-        padding: EdgeInsets.symmetric(horizontal: 10, vertical: 0),
+        padding: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
         child: Column(
           children: [
             Row(
@@ -32,8 +32,8 @@ class MyCartTile extends StatelessWidget {
                         borderRadius: BorderRadiusGeometry.circular(8),
                         child: Image.asset(
                           cartItem.food.imagePath, 
-                          height: 80, 
-                          width: 95,
+                          height: 100, 
+                          width: 100,
                         ),
                       ),
                       SizedBox(width: 10),
