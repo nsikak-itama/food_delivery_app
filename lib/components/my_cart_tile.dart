@@ -32,8 +32,8 @@ class MyCartTile extends StatelessWidget {
                         borderRadius: BorderRadiusGeometry.circular(8),
                         child: Image.asset(
                           cartItem.food.imagePath, 
-                          height: 120, 
-                          width: 110,
+                          height: 80, 
+                          width: 100,
                         ),
                       ),
                       SizedBox(width: 10),
