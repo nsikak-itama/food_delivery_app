@@ -3,7 +3,7 @@ import 'package:food_delivery_app/models/food.dart';
 
 class QunatitySelector extends StatelessWidget {
 
-
+ 
   final int quantity;
   final Food food;
   final VoidCallback onIncrement;
