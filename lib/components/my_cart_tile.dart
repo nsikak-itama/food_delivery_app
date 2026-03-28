@@ -43,7 +43,7 @@ class MyCartTile extends StatelessWidget {
                           children: [
                             Text(cartItem.food.name,overflow: TextOverflow.ellipsis),
                             SizedBox(height: 5),
-                            Text('\$' + cartItem.food.price.toString()),
+                            Text('\$${cartItem.food.price.toStringAsFixed(2)}'),
                             SizedBox(height: 5),
                             QunatitySelector(
                               quantity: cartItem.quantity, 
