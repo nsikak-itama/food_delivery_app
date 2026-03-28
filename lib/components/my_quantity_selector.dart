@@ -22,9 +22,9 @@ class QunatitySelector extends StatelessWidget {
         children: [
           IconButton(onPressed: onIncrement, icon: Icon(Icons.add, size: 20,)),
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 8),
+            padding: const EdgeInsets.symmetric(horizontal: 6),
             child: SizedBox(
-              width: 20,
+              width: 10,
               child: Center(
                 child: Text(quantity.toString())
               )
