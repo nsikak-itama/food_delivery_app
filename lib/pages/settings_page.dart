@@ -41,7 +41,7 @@ class _SettingsState extends State<Settings> {
             ),
           ),
 
-        ],
+        ],  
       ),
     );
   }

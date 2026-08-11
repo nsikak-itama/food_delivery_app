@@ -305,7 +305,7 @@ class Restaurant extends ChangeNotifier{
     ), 
   ];
 
-  String _deliveryAddress = "V.G.C Road 12";
+  String _deliveryAddress = "Ajah, Lagos";
 
 
   List<Food> get menu => _menu;
