@@ -9,6 +9,7 @@ import 'package:food_delivery_app/models/food.dart';
 import 'package:food_delivery_app/models/restaturant.dart';
 import 'package:food_delivery_app/pages/cart_page,.dart';
 import 'package:food_delivery_app/pages/food_page.dart';
+import 'package:food_delivery_app/responsive/max_scaffold.dart';
 import 'package:provider/provider.dart';
 
 class HomePage extends StatefulWidget {
@@ -53,8 +54,7 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Theme.of(context).colorScheme.background,
+    return MaxScaffold(
 
       drawer: MyDrawer(),
       body: NestedScrollView(
@@ -82,7 +82,7 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
             children: getFoodInThisCategory(restaurant.menu)
           ),
         ),
-      )
+      ), backGroundColor: Theme.of(context).colorScheme.background,
     );
   }
 }
