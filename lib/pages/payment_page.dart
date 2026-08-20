@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_credit_card/flutter_credit_card.dart';
 import 'package:food_delivery_app/components/my_button.dart';
 import 'package:food_delivery_app/pages/delivery_page.dart';
+import 'package:food_delivery_app/responsive/max_scaffold.dart';
 
 class PaymentPage extends StatefulWidget {
   const PaymentPage({super.key});
@@ -56,21 +57,23 @@ class _PaymentPageState extends State<PaymentPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Theme.of(context).colorScheme.background,
+    return MaxScaffold(
+      backGroundColor: Theme.of(context).colorScheme.background,
       appBar: AppBar(
         title: Text("Checkout"),
       ),
       body: Column(
         children: [
-          CreditCardWidget(
-            cardNumber: cardNumber, 
-            expiryDate: expiryDate, 
-            cardHolderName: cardHolderName, 
-            cvvCode: cvvCode, 
-            showBackView: isCvvFocused, 
-            isChipVisible: isChipVisible,
-            onCreditCardWidgetChange: (p0){}
+          Expanded(
+            child: CreditCardWidget(
+              cardNumber: cardNumber, 
+              expiryDate: expiryDate, 
+              cardHolderName: cardHolderName, 
+              cvvCode: cvvCode, 
+              showBackView: isCvvFocused, 
+              isChipVisible: isChipVisible,
+              onCreditCardWidgetChange: (p0){}
+            ),
           ),
 
           CreditCardForm(
