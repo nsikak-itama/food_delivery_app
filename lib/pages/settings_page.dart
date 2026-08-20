@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:food_delivery_app/Themes/theme_provider.dart';
+import 'package:food_delivery_app/responsive/max_scaffold.dart';
 import 'package:provider/provider.dart';
 
 class Settings extends StatefulWidget {
@@ -13,11 +14,11 @@ class Settings extends StatefulWidget {
 class _SettingsState extends State<Settings> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return MaxScaffold(
       appBar: AppBar(
         title: Text("Settings"),
       ),
-      backgroundColor: Theme.of(context).colorScheme.background,
+      backGroundColor: Theme.of(context).colorScheme.background,
       body: Column(
         children: [
           Container(
