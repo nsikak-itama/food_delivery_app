@@ -3,7 +3,6 @@ import 'package:food_delivery_app/components/my_button.dart';
 import 'package:food_delivery_app/components/my_cart_tile.dart';
 import 'package:food_delivery_app/models/restaturant.dart';
 import 'package:food_delivery_app/pages/payment_page.dart';
-import 'package:food_delivery_app/responsive/max_scaffold.dart';
 import 'package:provider/provider.dart';
 
 class CartPage extends StatelessWidget {
@@ -14,8 +13,8 @@ class CartPage extends StatelessWidget {
     return Consumer<Restaurant>(builder: (context, restaurant, child){
       final userCart = restaurant.cart;
 
-      return MaxScaffold(
-        
+      return Scaffold(
+        backgroundColor: Theme.of(context).colorScheme.background ,
         appBar: AppBar(
           backgroundColor: Colors.transparent,
           title: Text("cart"),
@@ -65,8 +64,7 @@ class CartPage extends StatelessWidget {
             MyButton(onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => PaymentPage())), text: "Go to checkout"),
             SizedBox(height: 10,)
           ],
-        ), 
-        backGroundColor:  Theme.of(context).colorScheme.background ,
+        ),
       );
     });
   }

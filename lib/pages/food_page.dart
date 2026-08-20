@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:food_delivery_app/components/my_button.dart';
 import 'package:food_delivery_app/models/food.dart';
 import 'package:food_delivery_app/models/restaturant.dart';
-import 'package:food_delivery_app/responsive/max_scaffold.dart';
 import 'package:provider/provider.dart';
 
 class FoodPage extends StatefulWidget {
@@ -35,8 +34,8 @@ class _FoodPageState extends State<FoodPage> {
   @override
   Widget build(BuildContext context) {
     return Stack(
-      children:[ MaxScaffold(
-        backGroundColor: Theme.of(context).colorScheme.background,
+      children:[ Scaffold(
+        backgroundColor: Theme.of(context).colorScheme.background,
         body: SingleChildScrollView(
           child: Column(
           children: [
@@ -95,7 +94,7 @@ class _FoodPageState extends State<FoodPage> {
             SizedBox(height: 25)
           ],
               ),
-        ), 
+        )
       ),
 
       Padding(

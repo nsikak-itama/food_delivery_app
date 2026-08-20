@@ -55,7 +55,7 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
   @override
   Widget build(BuildContext context) {
     return MaxScaffold(
-      constrainBody: false,
+
       drawer: MyDrawer(),
       body: NestedScrollView(
         headerSliverBuilder: (context, innerBoxIsScrolled) => [
@@ -77,14 +77,9 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
           )
         ], 
         body: Consumer<Restaurant>(
-          builder: (context, restaurant, child) => Center(
-            child: ConstrainedBox(
-              constraints: BoxConstraints(maxWidth: 500),
-              child: TabBarView(
-                controller: _tabController,
-                children: getFoodInThisCategory(restaurant.menu)
-              ),
-            ),
+          builder: (context, restaurant, child) => TabBarView(
+            controller: _tabController,
+            children: getFoodInThisCategory(restaurant.menu)
           ),
         ),
       ), backGroundColor: Theme.of(context).colorScheme.background,
