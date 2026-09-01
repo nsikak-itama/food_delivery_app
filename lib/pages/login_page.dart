@@ -3,6 +3,7 @@ import 'package:food_delivery_app/components/my_button.dart';
 import 'package:food_delivery_app/components/my_textfield.dart';
 import 'package:food_delivery_app/pages/home_page.dart';
 import 'package:food_delivery_app/pages/register_page.dart';
+import 'package:food_delivery_app/responsive/max_scaffold.dart';
 import 'package:food_delivery_app/services/auth/auth_services.dart';
 
 class LoginPage extends StatefulWidget {
@@ -44,8 +45,8 @@ class _LoginPageState extends State<LoginPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Theme.of(context).colorScheme.background,
+    return MaxScaffold(
+      backGroundColor: Theme.of(context).colorScheme.background,
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
